@@ -1,0 +1,19 @@
+{
+    "name": "leondeng/laravel-batch-mailgun",
+    "description": "Enable batch sending of Mailgun transport for Laravel",
+    "type": "project",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fan Deng",
+            "email": "leondeng@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
