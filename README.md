@@ -3,8 +3,9 @@ Enable batch sending of Mailgun transport for Laravel
 
 ## Background
 
-Laravel supports Mailgun transport, however it does not support batch sending. Developers had to user Mailgun SDK for this.
-With this package, developers are able to still use Mailable classes for their mailing logic with batch sending enabled.
+Laravel supports Mailgun transport, however it does not support the batch sending feature.
+Developers had to use Mailgun SDK for this.
+With this package, developers will be able to keep using Mailable classes with Mailgun batch sending.
 
 ## Usage
 ### Require this package
@@ -14,7 +15,6 @@ composer require "leondeng/laravel-batch-mailgun"
 ```
 
 ### Configuration
-
 After adding the package, replace the official MailServiceProvider in the providers array in `config/app.php`
 
 ```php
