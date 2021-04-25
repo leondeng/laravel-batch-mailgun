@@ -58,7 +58,7 @@ class MailgunTransport extends BaseMailgunTransport
           'name' => 'message',
           'contents' => str_replace(
             $message->getHeaders()->get('to')->toString(),
-            'To: %recipient%' . PHP_EOL,
+            'To: %recipient%'.PHP_EOL,
             $message->toString()
           ),
           'filename' => 'message.mime',
