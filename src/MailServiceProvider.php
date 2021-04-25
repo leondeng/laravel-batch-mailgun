@@ -7,14 +7,18 @@ use Illuminate\Mail\MailServiceProvider as BaseMailServiceProvider;
 class MailServiceProvider extends BaseMailServiceProvider
 {
   /**
-   * Register the Swift Transport instance.
+   * Register the Illuminate mailer instance.
    *
    * @return void
    */
-  protected function registerSwiftTransport()
+  protected function registerIlluminateMailer()
   {
-    $this->app->singleton('swift.transport', function ($app) {
-      return new TransportManager($app);
+    $this->app->singleton('mail.manager', function ($app) {
+      return new MailManager($app);
+    });
+
+    $this->app->bind('mailer', function ($app) {
+      return $app->make('mail.manager')->mailer();
     });
   }
 }
