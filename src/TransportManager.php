@@ -20,7 +20,8 @@ class TransportManager extends BaseTransportManager
       $this->guzzle($config),
       $config['secret'],
       $config['domain'],
-      $config['endpoint'] ?? null
+      $config['endpoint'] ?? null,
+      $config['batch_sending'] ?? false
     );
   }
 }

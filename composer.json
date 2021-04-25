@@ -25,5 +25,9 @@
                 "LeonDeng\\LaravelBatchMailgun\\MailServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "laravel/framework": "^5.5",
+        "guzzlehttp/guzzle": "^6.3"
     }
 }
