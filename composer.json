@@ -27,7 +27,7 @@
         }
     },
     "require-dev": {
-        "laravel/framework": "^5.5",
+        "laravel/framework": "^6.0",
         "guzzlehttp/guzzle": "^6.3"
     }
 }

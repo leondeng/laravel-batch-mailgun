@@ -14,7 +14,7 @@ class TransportManager extends BaseTransportManager
    */
   protected function createMailgunDriver()
   {
-    $config = $this->app['config']->get('services.mailgun', []);
+    $config = $this->config->get('services.mailgun', []);
 
     return new MailgunTransport(
       $this->guzzle($config),
